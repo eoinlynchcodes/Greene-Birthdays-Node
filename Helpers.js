@@ -17,6 +17,7 @@ async function addUser(user){
 async function addFamilyMember(familyMember){
     await db('familyMembers')
     .insert(familyMember, 'id');
+    return db('familyMembers');
 }
 
 function findAllFamilyMembers(){

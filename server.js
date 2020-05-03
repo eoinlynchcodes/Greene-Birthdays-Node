@@ -14,7 +14,7 @@ server.use(helmet());
 server.use(express.json());
 server.use(cors());
 
-server.get('/', function (req, res) {
+server.get('/hello', function (req, res) {
  res.send(JSON.stringify({ Hello: 'World'}));
 });
 
