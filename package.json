@@ -2,10 +2,11 @@
   "name": "Greene-Birthdays-Node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,16 @@
   },
   "homepage": "https://github.com/eoinlynchcodes/Greene-Birthdays-Node#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.21.1",
+    "nodemon": "^2.0.3",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
   }
 }
