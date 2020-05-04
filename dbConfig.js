@@ -1,6 +1,6 @@
 const knex = require('knex');
 
-const config = require('../Greene-Birthdays-Node/knexfile.js');
+const config = require('./knexfile.js');
 
 const db = knex(config.development);
 
