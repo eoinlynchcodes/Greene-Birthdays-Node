@@ -9,12 +9,12 @@ const Helpers = require('./Helpers');
 
 const port = process.env.PORT || 3000;
 
-var server = express();
+const server = express();
 server.use(helmet());
 server.use(express.json());
 server.use(cors());
 
-server.get('/hello', function (req, res) {
+server.get('/', function (req, res) {
  res.send(JSON.stringify({ Hello: 'World'}));
 });
 
